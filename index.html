@@ -8,12 +8,23 @@
     </style>
 
     <script>
+        const button = document.querySelector("button")
+
+        button.addEventListener("click", () => {
+            Notification.requestPermission().then(perm => {
+                if(perm === "granted") {
+                    new Notification("No Escape..")
+                }
+            })
+        })
     </script>
     
     <link rel="icon" type="image/x-icon" href="https://io008.netlify.app/io_favicon.png">
     <title>io008.as8</title>
 </head>
 <body>
+    <h1>Welcome</h1>
+    <button>Get Notified!</button>
 </body>
 <footer>
     <p>io008  InfraOrion.008</p>
