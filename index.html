@@ -8,15 +8,6 @@
     </style>
 
     <script>
-        const button = document.querySelector("button")
-
-        button.addEventListener("click", () => {
-            Notification.requestPermission().then(perm => {
-                if(perm === "granted") {
-                    new Notification("No Escape..")
-                }
-            })
-        })
     </script>
     
     <link rel="icon" type="image/x-icon" href="https://io008.netlify.app/io_favicon.png">
