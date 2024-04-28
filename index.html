@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-    </style>
-
-    <script>
-    </script>
-    
     <link rel="icon" type="image/x-icon" href="https://io008.netlify.app/io_favicon.png">
     <title>io008.as8</title>
 </head>
 <body>
     <h1>Welcome</h1>
-    <button>Get Notified!</button>
+    <form action="php_file.php" method="post" enctype="multipart/form-data">
+        Select a File
+        <br>
+        <input type="file" name="fuResume" id="fuResume">
+        <input type="submit" value="Upload">
+    </form>
 </body>
 <footer>
     <p>io008  InfraOrion.008</p>
